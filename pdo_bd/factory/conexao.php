@@ -1,7 +1,7 @@
 <?php
     class Caminho{
         public static $usuario = "root";
-        public static $senha = "123456";
+        public static $senha = "";
         public static $connect = null;
 
         private static function Conectar(){
