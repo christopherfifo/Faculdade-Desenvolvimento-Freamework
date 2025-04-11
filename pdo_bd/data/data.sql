@@ -9,12 +9,12 @@ CREATE TABLE tbvendedor(
 CREATE TABLE tbcliente(
 	codcli INT PRIMARY KEY AUTO_INCREMENT,
     cliente VARCHAR(90) NOT NULL,
-    cpf INT,
+    cpf VARCHAR(20),
     codvendedor INT,
     FOREIGN KEY(codvendedor) REFERENCES tbvendedor(codvend)
 );
 
-
+INSERT INTO tbvendedor(vendedor) VALUE ('Vendedor 1');
 
 Drop DATABASE bdlojinha2000;
 
