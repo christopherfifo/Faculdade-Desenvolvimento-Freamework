@@ -18,7 +18,10 @@
        $cadastrar->execute();
        
        if($cadastrar->rowcount()){
-           echo "Cadastrado com sucesso!";
+           echo "<script>
+              alert('Vendedor cadastrado com sucesso!');
+                window.location.href='../view/cadVendedor.php';
+              </script>";
        }else{
            echo "Dados não cadastrado";
        }

@@ -14,7 +14,10 @@ if (!empty($_POST['cliente']) && !empty($_POST['cpf']) && !empty($_POST['codvend
     $cadastrar->execute();
 
     if ($cadastrar->rowCount()) {
-        echo "Cliente cadastrado com sucesso!";
+        echo "<script>
+        alert('Cliente cadastrado com sucesso!');
+        window.location.href='../view/cadCliente.php';
+        </script>";
     } else {
         echo "Erro ao cadastrar cliente.";
     }
