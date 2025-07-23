@@ -97,10 +97,10 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 <div id="cxcliente">
     <h1>Alterar Cliente</h1>
     <form action="../model/alterarCli.php?id=<?php echo $linha['codcli']; ?>" method="POST">
+        <input type="hidden" name="codcli" value="<?php echo $linha['codcli']; ?>">
         <input type="text" name="cliente" value="<?php echo $linha['cliente']; ?>" placeholder="Nome do cliente" required>
         <input type="text" name="cpf" value="<?php echo $linha['cpf']; ?>" placeholder="CPF do cliente" required>
         <input type="number" name="codvendedor" value="<?php echo $linha['codvendedor']; ?>" placeholder="Código do vendedor" required>
         <button type="submit">Salvar Alterações</button>
     </form>
 </div>
-<!-- <input type="hidden" name="codcli" value="<?php echo $linha['codcli']; ?>"> -->
